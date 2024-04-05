@@ -30,6 +30,7 @@ final class HealthTest extends CIUnitTestCase
             // BaseURL in .env is a valid URL?
             // phpunit.xml.dist sets app.baseURL in $_SERVER
             // So if you set app.baseURL in .env, it takes precedence
+            //Test
             $config = new App();
             $this->assertTrue(
                 $validation->check($config->baseURL, 'valid_url'),
